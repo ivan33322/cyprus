@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    background: black;
+}
+
+.header {
+    background: rgb(35,195,195);
+    background: linear-gradient(0deg, rgba(35,195,195,1) 0%, rgba(0,250,83,1) 100%);
+}
+
+.header ul {
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px;
+}
+
+header .logo, footer .blocks .logo {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header nav ul li a:hover{
+    border-bottom: 5px solid white;
+}
+
+header nav ul li.btn a, .email .block button {
+    background: rgb(85, 45, 165);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 70px;
+}
+
+.hero--info h2 {   
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info h1 {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px;
+}
+
+.hero--info .btn , .hero-about .info .btn {
+    background: yellow;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    transition: all 500ms ease;
+    font-size: 20px;
+}
+
+.hero--info .btn:hover, .hero-about .info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img, .hero-about div img{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;           
+    right: 0;
+    max-width: 100%;
+    padding-top: 80px;
+}
+
+.trending h3 {
+    font-weight: 600;
+    font-size: 31px;
+}
+
+
+.trending {
+    padding-top: 50px;
+}
+
+.trending .see-all, .projects .see-all {
+    color: white;
+    background: black;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transform: all 500ms ease;
+}
+
+.trending .see-all:hover , .projects .see-all:hover {
+    transform: scale(1.1);
+}
+
+.trending .locations {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.trending .locations span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trending .locations span img {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+.features {
+    background: url('/img/5.jpg') no-repeat center center;
+    background-size: cover;
+    height: 1000px;
+}
+
+.features .container .info .block img {
+    width: 200px;
+    height: 200px;
+}
+
+.features h3 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.features .info {
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.features .info .block p {
+    margin-top: 25px;
+}
+
+.projects {
+    padding: 100px 0;
+}
+
+.projects h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects p {
+    margin: 30px;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.projects .see-all {
+    float: none;
+    width: 70px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email .block {
+    background: yellow;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    background: white;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+}
+
+.email .block input::placeholder {
+    color: grey;
+}
+
+
+.email .block button:hover{
+    background: red;
+}
+
+
+.email .block button {
+    cursor: pointer;
+    border: none;
+    padding: 15px 15px;
+    color:white;
+}
+
+/* about us */
+.hero-about {
+    position: relative;
+}
+
+
+.hero-about .info {
+    width: 500px;
+    padding: 250px 0;
+}
+
+.hero-about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero-about .info .btn {
+    margin-top: 20px;
+}
+
+.work {
+    padding: 80px 0;
+}
+
+
+.work h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.work .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block {
+    width: 25%;
+    border-radius: 50px;
+    padding: 50px 35px;
+    background: blueviolet;
+}
+
+.work .blocks .block .badge {
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.work .blocks .block h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+
+.work .blocks .block #n1 {
+    background: lightgreen;
+}
+.work .blocks .block #n2 {
+    background: blue;
+}
+.work .blocks .block #n3 {
+    background: red;
+}
+
+.header .work #title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1500;
+}
+
+.header .images {
+    width: 500px;
+    height: 500px;
+}
+/* contacts */
+.hero-contacts h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.hero-contacts p {
+    text-align: center;
+}
+
+.hero-contacts img {
+    position: relative;          /* Устанавливаем контекст для абсолютного позиционирования */
+    height: 100vh;
+    border-radius: 5%;
+}
+
+.feedback {
+    padding: 70px 0;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback form {
+    margin: 100px auto;
+    width: 700px;
+}
+
+.feedback form .inline .names .FirstName, .LastName {
+    width: 50%;
+}
+
+.feedback form .inline .names {
+    display: flex;
+}
+
+
+
+.feedback form label {
+    font-size: 14px;
+    color: grey;
+}
+
+.feedback form input, .feedback form textarea {
+    background: white;
+    border-radius: 10px;
+    border: 0.6px solid grey;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 96%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: yellow;
+    border-radius: 9px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    color: white;
+    padding: 15px 35px;
+    transition: all 500ms ease;
+}
+
+.feedback form button:hover{
+    background-color: red;
+}
+
+
+/* footer */
+footer {
+    color: white;
+    background: black;
+    padding: 50px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p{
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer > p {
+    text-align: center;
+    margin-top: 50px;
+}
+
