@@ -11,13 +11,18 @@ body {
     background: black;
 }
 
-.header {
-    background: rgb(35,195,195);
-    background: linear-gradient(0deg, rgba(35,195,195,1) 0%, rgba(0,250,83,1) 100%);
+.header,
+.section {
+    background: rgb(35, 195, 195);
+    background: linear-gradient(0deg, rgba(35, 195, 195, 1) 0%, rgba(0, 250, 83, 1) 100%);
 }
 
-.header ul {
-    gap: 50px;
+ul {
+    gap: 25px;
+}
+
+header {
+    padding: 50px;
 }
 
 a {
@@ -33,11 +38,8 @@ img {
     margin: 0 auto;
 }
 
-header {
-    padding: 50px;
-}
-
-header .logo, footer .blocks .logo {
+header .logo,
+footer .blocks .logo {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 800;
@@ -62,11 +64,12 @@ header nav ul li a {
     color: white;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     border-bottom: 5px solid white;
 }
 
-header nav ul li.btn a, .email .block button {
+header nav ul li.btn a,
+.email .block button {
     background: rgb(85, 45, 165);
     padding: 10px 15px;
     border-radius: 5px;
@@ -74,29 +77,34 @@ header nav ul li.btn a, .email .block button {
 
 /* Основная часть */
 
-.home, .about {
+.home,
+.about {
     height: 750px;
     padding-bottom: 200px;
     position: relative;
 }
 
-.home-info, .about-info {
+.home-info,
+.about-info {
     padding-top: 70px;
 }
 
-.home-info h1, .about-info h1 {
+.home-info h1,
+.about-info h1 {
     font-size: 50px;
     width: 750px;
 }
-    
-.home-info p, .about-info p {
+
+.home-info p,
+.about-info p {
     width: 700px;
     font-size: 30px;
     font-weight: 500;
     line-height: 170%;
 }
 
-.home-info .btn , .about-info .btn {
+.home-info .btn,
+.about-info .btn {
     display: block;
     background: yellow;
     color: white;
@@ -108,56 +116,67 @@ header nav ul li.btn a, .email .block button {
     font-size: 20px;
 }
 
-.home-info .btn:hover, .about-info .btn:hover {
+.home-info .btn:hover,
+.about-info .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.home img, .about img{
+.home img,
+.about img {
     height: 600px;
     width: 600px;
     position: absolute;
-    top: 0;           
+    top: 0;
     right: 0;
     max-width: 100%;
     padding-top: 80px;
 }
 
 /* bestlocations */
-.thebestlocations {
-    padding-top: 50px; /* отступ от прошлого раздела */
-} 
-.thebestlocations h3 {
+.thebestcity {
+    padding-top: 50px;
+    /* отступ от прошлого раздела */
+}
+
+.thebestcity h3 {
     font-weight: 700;
     font-size: 35px;
 }
-.thebestlocations .see-all, .projects .see-all {
+
+.thebestcity .see-all,
+.locations .see-all {
     color: white;
     background: black;
     border-radius: 5px;
     padding: 12px 23px;
     float: right;
     transform: all 500ms ease;
-}/* настройки кнопок */
-.thebestlocations .see-all:hover , .projects .see-all:hover {
-    transform: scale(1.1);
-}/* настройки кнопок при наведении */
+}
 
-.locations {
+/* настройки кнопок */
+.thebestcity .see-all:hover,
+.locations .see-all:hover {
+    transform: scale(1.1);
+}
+
+/* настройки кнопок при наведении */
+
+.city {
     display: flex;
     margin-top: 90px;
 }
 
-.locations .block {
+.city .block {
     margin: 10px;
 }
 
-.locations .block img {
+.city .block img {
     width: 500px;
     height: 200px;
 }
 
-.locations .block span {
+.city .block span {
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -193,7 +212,7 @@ header nav ul li.btn a, .email .block button {
     align-items: center;
     height: 50vh;
 }
-/* здесь */
+
 .features .info {
     display: flex;
     justify-self: center;
@@ -209,41 +228,49 @@ header nav ul li.btn a, .email .block button {
 .features .info .block p {
     margin-top: 25px;
 }
-/* projects */
-.projects {
+
+/* locations */
+
+.locations {
     padding: 100px 0;
     width: 1440px;
-    height: 1200px;
+    height: 1000px;
 }
 
-.projects h3 {
+.locations h3 {
     font-size: 30px;
     text-align: center;
 }
 
-.projects p {
+.locations p {
     margin: 30px;
     text-align: center;
 }
 
-.projects .images {
-    display: flex;
-    margin-bottom: 25px;
-    justify-content: space-around;
-}
-.projects .images img {
-    width: 500px;
-    height: 500px;
+/* размеры картинок  */
+
+.locations .images img {
+    width: 350px;
+    height: 350px;
+    margin: 25px;
 }
 
-.projects .see-all {
-    float: none;
-    width: 100px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.locations .images {
+    display: block;
+    justify-content: center;
+}
+
+.locations .images .image1,
+.locations .images .image2 {
+    display: flex;
+    justify-content: center;
+}
+
+.locations .see-all {
+    margin-right: 670px;
     margin-top: 50px;
 }
+
 /* email */
 .email {
     padding-bottom: 120px;
@@ -299,14 +326,13 @@ header nav ul li.btn a, .email .block button {
     cursor: pointer;
     border: none;
     padding: 15px 15px;
-    color:white;
+    color: white;
 }
 
 /* about us */
 .hero-about {
     position: relative;
 }
-
 
 .hero-about .info {
     width: 500px;
@@ -355,13 +381,14 @@ header nav ul li.btn a, .email .block button {
     margin: 20px 0;
 }
 
-
 .work .blocks .block #n1 {
     background: lightgreen;
 }
+
 .work .blocks .block #n2 {
     background: blue;
 }
+
 .work .blocks .block #n3 {
     background: red;
 }
@@ -372,24 +399,20 @@ header nav ul li.btn a, .email .block button {
     font-size: 1500;
 }
 
-.header .images {
-    width: 500px;
-    height: 500px;
-}
-/* contacts */
-.hero-contacts h1 {
+/* map */
+.map h1 {
     text-align: center;
     margin-top: 70px;
     margin-bottom: 30px;
     font-size: 33px;
 }
 
-.hero-contacts p {
+.map p {
     text-align: center;
 }
 
-.hero-contacts img {
-    position: relative;/* Устанавливаем контекст для абсолютного позиционирования */
+.map img {
+    position: relative;
     height: 100vh;
     border-radius: 5%;
 }
@@ -409,7 +432,8 @@ header nav ul li.btn a, .email .block button {
     width: 700px;
 }
 
-.feedback form .inline .names .FirstName, .LastName {
+.feedback form .inline .names .FirstName,
+.LastName {
     width: 50%;
 }
 
@@ -417,14 +441,13 @@ header nav ul li.btn a, .email .block button {
     display: flex;
 }
 
-
-
 .feedback form label {
     font-size: 14px;
     color: grey;
 }
 
-.feedback form input, .feedback form textarea {
+.feedback form input,
+.feedback form textarea {
     background: white;
     border-radius: 10px;
     border: 0.6px solid grey;
@@ -456,9 +479,35 @@ header nav ul li.btn a, .email .block button {
     transition: all 500ms ease;
 }
 
-.feedback form button:hover{
+.feedback form button:hover {
     background-color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
@@ -473,7 +522,7 @@ footer .blocks {
     justify-content: space-between;
 }
 
-footer .blocks p{
+footer .blocks p {
     width: 300px;
     margin: 15px 0;
 }
@@ -492,8 +541,7 @@ footer .blocks ul li {
     opacity: 0.8;
 }
 
-footer > p {
+footer>p {
     text-align: center;
     margin-top: 50px;
 }
-
