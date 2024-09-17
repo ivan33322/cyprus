@@ -195,7 +195,7 @@ header nav ul li.btn a,
 /* features */
 
 .features {
-    background: url('/img/black.jpg') no-repeat center center;
+    background: url('img/black.jpg') no-repeat center center;
     background-size: cover;
     height: 1000px;
 }
