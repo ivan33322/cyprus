@@ -71,30 +71,36 @@ header nav ul li.btn a, .email .block button {
     padding: 10px 15px;
     border-radius: 5px;
 }
-.hero {
-    padding-bottom: 100px;
+
+/* Основная часть */
+
+.home, .about {
+    height: 750px;
+    padding-bottom: 200px;
     position: relative;
 }
 
-.hero--info {
-    width: 530px;
+.home-info, .about-info {
     padding-top: 70px;
 }
 
-.hero--info h2 {   
+.home-info h1, .about-info h1 {
     font-size: 50px;
-    font-weight: 600;
+    width: 750px;
 }
-
-.hero--info h1 {
+    
+.home-info p, .about-info p {
+    width: 700px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 170%;
-    margin: 30px;
 }
 
-.hero--info .btn , .hero-about .info .btn {
+.home-info .btn , .about-info .btn {
+    display: block;
     background: yellow;
     color: white;
+    margin-top: 20px;
     border-radius: 50px;
     padding: 15px 30px;
     border: none;
@@ -102,12 +108,12 @@ header nav ul li.btn a, .email .block button {
     font-size: 20px;
 }
 
-.hero--info .btn:hover, .hero-about .info .btn:hover {
+.home-info .btn:hover, .about-info .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.hero img, .hero-about div img{
+.home img, .about img{
     height: 600px;
     width: 600px;
     position: absolute;
@@ -117,47 +123,46 @@ header nav ul li.btn a, .email .block button {
     padding-top: 80px;
 }
 
-.trending h3 {
-    font-weight: 600;
-    font-size: 31px;
+/* bestlocations */
+.thebestlocations {
+    padding-top: 50px; /* отступ от прошлого раздела */
+} 
+.thebestlocations h3 {
+    font-weight: 700;
+    font-size: 35px;
 }
-
-
-.trending {
-    padding-top: 50px;
-}
-
-.trending .see-all, .projects .see-all {
+.thebestlocations .see-all, .projects .see-all {
     color: white;
     background: black;
     border-radius: 5px;
     padding: 12px 23px;
     float: right;
-    display: block;
     transform: all 500ms ease;
-}
-
-.trending .see-all:hover , .projects .see-all:hover {
+}/* настройки кнопок */
+.thebestlocations .see-all:hover , .projects .see-all:hover {
     transform: scale(1.1);
-}
+}/* настройки кнопок при наведении */
 
-.trending .locations {
+.locations {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 50px 0;
+    margin-top: 90px;
 }
 
-.trending .locations span {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
+.locations .block {
+    margin: 10px;
 }
 
-.trending .locations span img {
-    position: relative;
-    top: 5px;
-    margin-right: 10px;
+.locations .block img {
+    width: 500px;
+    height: 200px;
+}
+
+.locations .block span {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .big-text {
@@ -167,8 +172,11 @@ header nav ul li.btn a, .email .block button {
     text-align: center;
     width: 800px;
 }
+
+/* features */
+
 .features {
-    background: url('/img/1.jpg') no-repeat center center;
+    background: url('/img/black.jpg') no-repeat center center;
     background-size: cover;
     height: 1000px;
 }
@@ -179,13 +187,13 @@ header nav ul li.btn a, .email .block button {
 }
 
 .features h3 {
-    font-size: 40px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
 }
-
+/* здесь */
 .features .info {
     display: flex;
     justify-self: center;
@@ -201,9 +209,11 @@ header nav ul li.btn a, .email .block button {
 .features .info .block p {
     margin-top: 25px;
 }
-
+/* projects */
 .projects {
     padding: 100px 0;
+    width: 1440px;
+    height: 1200px;
 }
 
 .projects h3 {
@@ -218,18 +228,23 @@ header nav ul li.btn a, .email .block button {
 
 .projects .images {
     display: flex;
-    justify-content: space-around;
     margin-bottom: 25px;
+    justify-content: space-around;
+}
+.projects .images img {
+    width: 500px;
+    height: 500px;
 }
 
 .projects .see-all {
     float: none;
-    width: 70px;
+    width: 100px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 }
-
+/* email */
 .email {
     padding-bottom: 120px;
 }
@@ -308,9 +323,9 @@ header nav ul li.btn a, .email .block button {
 }
 
 .work {
-    padding: 80px 0;
+    padding: 50px;
+    padding-bottom: 100px;
 }
-
 
 .work h2 {
     font-size: 25px;
@@ -374,7 +389,7 @@ header nav ul li.btn a, .email .block button {
 }
 
 .hero-contacts img {
-    position: relative;          /* Устанавливаем контекст для абсолютного позиционирования */
+    position: relative;/* Устанавливаем контекст для абсолютного позиционирования */
     height: 100vh;
     border-radius: 5%;
 }
@@ -473,7 +488,7 @@ footer .blocks ul {
 }
 
 footer .blocks ul li {
-    margin-top: 7px;
+    margin-top: 20px;
     opacity: 0.8;
 }
 
